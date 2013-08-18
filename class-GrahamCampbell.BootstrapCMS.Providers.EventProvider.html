@@ -7,7 +7,7 @@
 	<title>Class GrahamCampbell\BootstrapCMS\Providers\EventProvider</title>
 
 	<script type="text/javascript" src="resources/combined.js?2320924919"></script>
-	<script type="text/javascript" src="elementlist.js?3118551423"></script>
+	<script type="text/javascript" src="elementlist.js?4046822220"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -35,6 +35,8 @@
 						</li>
 				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Handlers.html">Handlers</a>
 						</li>
+				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Interfaces.html">Interfaces</a>
+						</li>
 				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Models.html">Models<span></span></a>
 						<ul>
 				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Models.Common.html">Common</a>
@@ -50,6 +52,8 @@
 							</ul></li></ul></li>
 				<li class="active"><a href="namespace-GrahamCampbell.BootstrapCMS.Providers.html">Providers<span></span></a>
 						<ul>
+				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Providers.Common.html">Common</a>
+						</li>
 				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Providers.Interfaces.html">Interfaces</a>
 						</li>
 							</ul></li>
@@ -79,6 +83,7 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
+				<li><a href="class-GrahamCampbell.BootstrapCMS.Providers.BaseProvider.html">BaseProvider</a></li>
 				<li><a href="class-GrahamCampbell.BootstrapCMS.Providers.CommentProvider.html">CommentProvider</a></li>
 				<li class="active"><a href="class-GrahamCampbell.BootstrapCMS.Providers.EventProvider.html">EventProvider</a></li>
 				<li><a href="class-GrahamCampbell.BootstrapCMS.Providers.PageProvider.html">PageProvider</a></li>
@@ -131,9 +136,20 @@
 
 	<dl class="tree">
 		<dd style="padding-left:0px">
-<b><span>GrahamCampbell\BootstrapCMS\Providers\EventProvider</span></b>			
+			<a href="class-GrahamCampbell.BootstrapCMS.Providers.BaseProvider.html"><span>GrahamCampbell\BootstrapCMS\Providers\BaseProvider</span></a>
+			
 			 implements 
+				<a href="class-GrahamCampbell.BootstrapCMS.Interfaces.ICacheable.html"><span>GrahamCampbell\BootstrapCMS\Interfaces\ICacheable</span></a>, 
+			
 				<a href="class-GrahamCampbell.BootstrapCMS.Providers.Interfaces.IBaseProvider.html"><span>GrahamCampbell\BootstrapCMS\Providers\Interfaces\IBaseProvider</span></a>
+			
+			 uses 
+				<a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html"><span>GrahamCampbell\BootstrapCMS\Providers\Common\TraitBaseProvider</span></a>
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>GrahamCampbell\BootstrapCMS\Providers\EventProvider</span></b>			
 			
 			
 		</dd>
@@ -152,74 +168,48 @@
 		<b>Namespace:</b> <a href="namespace-GrahamCampbell.html">GrahamCampbell</a>\<a href="namespace-GrahamCampbell.BootstrapCMS.html">BootstrapCMS</a>\<a href="namespace-GrahamCampbell.BootstrapCMS.Providers.html">Providers</a><br />
 		
 
-		<b>Located at</b> <a href="source-class-GrahamCampbell.BootstrapCMS.Providers.EventProvider.html#5-14" title="Go to source code">app/src/GrahamCampbell/BootstrapCMS/Providers/EventProvider.php</a><br />
+		<b>Located at</b> <a href="source-class-GrahamCampbell.BootstrapCMS.Providers.EventProvider.html#3-7" title="Go to source code">app/src/GrahamCampbell/BootstrapCMS/Providers/EventProvider.php</a><br />
 	</div>
 
 
 
-	<table class="summary" id="methods">
-	<caption>Methods summary</caption>
-	<tr data-order="findById" id="_findById">
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_findById">#</a>
-		<code><a href="source-class-GrahamCampbell.BootstrapCMS.Providers.EventProvider.html#7-9" title="Go to source code">findById</a>( <span>mixed <var>$id</var></span>, <span>array <var>$columns</var> = <span class="php-keyword1">array</span>(<span class="php-quote">'*'</span>)</span> )</code>
-
-		<div class="description short">
-			
-		</div>
-
-		<div class="description detailed hidden">
-			
-
-
-
-
-
-
-
-				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-GrahamCampbell.BootstrapCMS.Providers.Interfaces.IBaseProvider.html#_findById">GrahamCampbell\BootstrapCMS\Providers\Interfaces\IBaseProvider::findById()</a></code></div>
-		</div>
-		</div></td>
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-GrahamCampbell.BootstrapCMS.Providers.Interfaces.IBaseProvider.html#methods">GrahamCampbell\BootstrapCMS\Providers\Interfaces\IBaseProvider</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-GrahamCampbell.BootstrapCMS.Providers.Interfaces.IBaseProvider.html#_create">create()</a>, 
+			<a href="class-GrahamCampbell.BootstrapCMS.Providers.Interfaces.IBaseProvider.html#_findById">findById()</a>
+		</code></td>
 	</tr>
-	<tr data-order="create" id="_create">
+	</table>
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-GrahamCampbell.BootstrapCMS.Interfaces.ICacheable.html#methods">GrahamCampbell\BootstrapCMS\Interfaces\ICacheable</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-GrahamCampbell.BootstrapCMS.Interfaces.ICacheable.html#_flush">flush()</a>, 
+			<a href="class-GrahamCampbell.BootstrapCMS.Interfaces.ICacheable.html#_purge">purge()</a>, 
+			<a href="class-GrahamCampbell.BootstrapCMS.Interfaces.ICacheable.html#_refresh">refresh()</a>
+		</code></td>
+	</tr>
+	</table>
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_create">#</a>
-		<code><a href="source-class-GrahamCampbell.BootstrapCMS.Providers.EventProvider.html#11-13" title="Go to source code">create</a>( <span>array <var>$input</var></span> )</code>
-
-		<div class="description short">
-			
-		</div>
-
-		<div class="description detailed hidden">
-			
-
-
-
-
-
-
-
-				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-GrahamCampbell.BootstrapCMS.Providers.Interfaces.IBaseProvider.html#_create">GrahamCampbell\BootstrapCMS\Providers\Interfaces\IBaseProvider::create()</a></code></div>
-		</div>
-		</div></td>
+	<table class="summary used">
+	<caption>Methods used from <a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#methods">GrahamCampbell\BootstrapCMS\Providers\Common\TraitBaseProvider</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#_create">()</a>, 
+			<a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#_findById">()</a>, 
+			<a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#_flush">()</a>, 
+			<a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#_flushCache">()</a>, 
+			<a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#_getCache">()</a>, 
+			<a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#_goGet">()</a>, 
+			<a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#_purge">()</a>, 
+			<a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#_purgeCache">()</a>, 
+			<a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#_refresh">()</a>, 
+			<a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#_setCache">()</a>, 
+			<a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#_validCache">()</a>
+		</code></td>
 	</tr>
 	</table>
 
@@ -232,8 +222,32 @@
 
 
 
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="model" id="$model">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
 
+		<td class="name">
+				<a href="source-class-GrahamCampbell.BootstrapCMS.Providers.EventProvider.html#5" title="Go to source code"><var>$model</var></a>
+		</td>
+		<td class="value"><code><span class="php-quote">'GrahamCampbell\BootstrapCMS\Models\Event'</span></code></td>
+		<td class="description"><div>
+			<a href="#$model" class="anchor">#</a>
 
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
 
 
 
