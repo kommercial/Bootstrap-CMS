@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class GrahamCampbell\BootstrapCMS\Controllers\PageController</title>
+
+	<script type="text/javascript" src="resources/combined.js?2320924919"></script>
+	<script type="text/javascript" src="elementlist.js?3118551423"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-GrahamCampbell.html">GrahamCampbell<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-GrahamCampbell.BootstrapCMS.html">BootstrapCMS<span></span></a>
+						<ul>
+				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Classes.html">Classes</a>
+						</li>
+				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Commands.html">Commands</a>
+						</li>
+				<li class="active"><a href="namespace-GrahamCampbell.BootstrapCMS.Controllers.html">Controllers</a>
+						</li>
+				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Facades.html">Facades</a>
+						</li>
+				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Handlers.html">Handlers</a>
+						</li>
+				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Models.html">Models<span></span></a>
+						<ul>
+				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Models.Common.html">Common</a>
+						</li>
+				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Models.Interfaces.html">Interfaces</a>
+						</li>
+				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Models.Relations.html">Relations<span></span></a>
+						<ul>
+				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Models.Relations.Common.html">Common</a>
+						</li>
+				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Models.Relations.Interfaces.html">Interfaces</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Providers.html">Providers<span></span></a>
+						<ul>
+				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Providers.Interfaces.html">Interfaces</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Subscribers.html">Subscribers</a>
+						</li>
+				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Tests.Controllers.html">Controllers</a>
+						</li>
+				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Tests.Models.html">Models<span></span></a>
+						<ul>
+				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Tests.Models.Relations.html">Relations<span></span></a>
+						<ul>
+				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Tests.Models.Relations.Common.html">Common</a>
+						</li>
+				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Tests.Models.Relations.Interfaces.html">Interfaces</a>
+						</li>
+							</ul></li></ul></li></ul></li></ul></li></ul></li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-GrahamCampbell.BootstrapCMS.Controllers.AccountController.html">AccountController</a></li>
+				<li><a href="class-GrahamCampbell.BootstrapCMS.Controllers.BaseController.html">BaseController</a></li>
+				<li><a href="class-GrahamCampbell.BootstrapCMS.Controllers.CloudflareController.html">CloudflareController</a></li>
+				<li><a href="class-GrahamCampbell.BootstrapCMS.Controllers.CommentController.html">CommentController</a></li>
+				<li><a href="class-GrahamCampbell.BootstrapCMS.Controllers.EventController.html">EventController</a></li>
+				<li><a href="class-GrahamCampbell.BootstrapCMS.Controllers.HomeController.html">HomeController</a></li>
+				<li><a href="class-GrahamCampbell.BootstrapCMS.Controllers.LoginController.html">LoginController</a></li>
+				<li class="active"><a href="class-GrahamCampbell.BootstrapCMS.Controllers.PageController.html">PageController</a></li>
+				<li><a href="class-GrahamCampbell.BootstrapCMS.Controllers.PostController.html">PostController</a></li>
+				<li><a href="class-GrahamCampbell.BootstrapCMS.Controllers.RegistrationController.html">RegistrationController</a></li>
+				<li><a href="class-GrahamCampbell.BootstrapCMS.Controllers.ResetController.html">ResetController</a></li>
+				<li><a href="class-GrahamCampbell.BootstrapCMS.Controllers.UserController.html">UserController</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-GrahamCampbell.BootstrapCMS.Controllers.html" title="Summary of GrahamCampbell\BootstrapCMS\Controllers"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class PageController</h1>
+
+
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+Controller
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+			<a href="class-GrahamCampbell.BootstrapCMS.Controllers.BaseController.html"><span>GrahamCampbell\BootstrapCMS\Controllers\BaseController</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:60px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>GrahamCampbell\BootstrapCMS\Controllers\PageController</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-GrahamCampbell.html">GrahamCampbell</a>\<a href="namespace-GrahamCampbell.BootstrapCMS.html">BootstrapCMS</a>\<a href="namespace-GrahamCampbell.BootstrapCMS.Controllers.html">Controllers</a><br />
+		
+
+		<b>Located at</b> <a href="source-class-GrahamCampbell.BootstrapCMS.Controllers.PageController.html#13-197" title="Go to source code">app/src/GrahamCampbell/BootstrapCMS/Controllers/PageController.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-GrahamCampbell.BootstrapCMS.Controllers.PageController.html#15-28" title="Go to source code">__construct</a>( )</code>
+
+		<div class="description short">
+			
+<p>Setup access permissions.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Setup access permissions.</p>
+
+
+
+
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-GrahamCampbell.BootstrapCMS.Controllers.BaseController.html#___construct">GrahamCampbell\BootstrapCMS\Controllers\BaseController::__construct()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="index" id="_index">
+
+		<td class="attributes"><code>
+			 public 
+			Response
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_index">#</a>
+		<code><a href="source-class-GrahamCampbell.BootstrapCMS.Controllers.PageController.html#30-39" title="Go to source code">index</a>( )</code>
+
+		<div class="description short">
+			
+<p>Display a listing of the resource.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Display a listing of the resource.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>Response</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="create" id="_create">
+
+		<td class="attributes"><code>
+			 public 
+			Response
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_create">#</a>
+		<code><a href="source-class-GrahamCampbell.BootstrapCMS.Controllers.PageController.html#41-48" title="Go to source code">create</a>( )</code>
+
+		<div class="description short">
+			
+<p>Show the form for creating a new resource.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Show the form for creating a new resource.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>Response</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="store" id="_store">
+
+		<td class="attributes"><code>
+			 public 
+			Response
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_store">#</a>
+		<code><a href="source-class-GrahamCampbell.BootstrapCMS.Controllers.PageController.html#50-78" title="Go to source code">store</a>( )</code>
+
+		<div class="description short">
+			
+<p>Store a newly created resource in storage.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Store a newly created resource in storage.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>Response</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="show" id="_show">
+
+		<td class="attributes"><code>
+			 public 
+			Response
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_show">#</a>
+		<code><a href="source-class-GrahamCampbell.BootstrapCMS.Controllers.PageController.html#80-91" title="Go to source code">show</a>( <span>string <var>$slug</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Display the specified resource.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Display the specified resource.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$slug</var></dt>
+					<dd><code>string</code><br>$slug</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>Response</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="edit" id="_edit">
+
+		<td class="attributes"><code>
+			 public 
+			Response
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_edit">#</a>
+		<code><a href="source-class-GrahamCampbell.BootstrapCMS.Controllers.PageController.html#93-104" title="Go to source code">edit</a>( <span>string <var>$slug</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Show the form for editing the specified resource.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Show the form for editing the specified resource.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$slug</var></dt>
+					<dd><code>string</code><br>$slug</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>Response</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="update" id="_update">
+
+		<td class="attributes"><code>
+			 public 
+			Response
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_update">#</a>
+		<code><a href="source-class-GrahamCampbell.BootstrapCMS.Controllers.PageController.html#106-143" title="Go to source code">update</a>( <span>string <var>$slug</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Update the specified resource in storage.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Update the specified resource in storage.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$slug</var></dt>
+					<dd><code>string</code><br>$slug</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>Response</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="destroy" id="_destroy">
+
+		<td class="attributes"><code>
+			 public 
+			Response
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_destroy">#</a>
+		<code><a href="source-class-GrahamCampbell.BootstrapCMS.Controllers.PageController.html#145-165" title="Go to source code">destroy</a>( <span>string <var>$slug</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Remove the specified resource from storage.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Remove the specified resource from storage.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$slug</var></dt>
+					<dd><code>string</code><br>$slug</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>Response</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="checkPage" id="_checkPage">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_checkPage">#</a>
+		<code><a href="source-class-GrahamCampbell.BootstrapCMS.Controllers.PageController.html#167-175" title="Go to source code">checkPage</a>( <span>mixed <var>$page</var></span>, <span>mixed <var>$slug</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="checkUpdate" id="_checkUpdate">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_checkUpdate">#</a>
+		<code><a href="source-class-GrahamCampbell.BootstrapCMS.Controllers.PageController.html#177-189" title="Go to source code">checkUpdate</a>( <span>mixed <var>$input</var></span>, <span>mixed <var>$slug</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="checkDelete" id="_checkDelete">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_checkDelete">#</a>
+		<code><a href="source-class-GrahamCampbell.BootstrapCMS.Controllers.PageController.html#191-196" title="Go to source code">checkDelete</a>( <span>mixed <var>$slug</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-GrahamCampbell.BootstrapCMS.Controllers.BaseController.html#methods">GrahamCampbell\BootstrapCMS\Controllers\BaseController</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-GrahamCampbell.BootstrapCMS.Controllers.BaseController.html#_getUserId">getUserId()</a>, 
+			<a href="class-GrahamCampbell.BootstrapCMS.Controllers.BaseController.html#_missingMethod">missingMethod()</a>, 
+			<a href="class-GrahamCampbell.BootstrapCMS.Controllers.BaseController.html#_setPermission">setPermission()</a>, 
+			<a href="class-GrahamCampbell.BootstrapCMS.Controllers.BaseController.html#_setPermissions">setPermissions()</a>, 
+			<a href="class-GrahamCampbell.BootstrapCMS.Controllers.BaseController.html#_setupLayout">setupLayout()</a>, 
+			<a href="class-GrahamCampbell.BootstrapCMS.Controllers.BaseController.html#_viewMake">viewMake()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>
