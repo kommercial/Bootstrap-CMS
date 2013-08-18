@@ -8,7 +8,7 @@
 	<title>File app/src/GrahamCampbell/BootstrapCMS/Controllers/HomeController.php</title>
 
 	<script type="text/javascript" src="resources/combined.js?2320924919"></script>
-	<script type="text/javascript" src="elementlist.js?4046822220"></script>
+	<script type="text/javascript" src="elementlist.js?232316487"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -176,29 +176,30 @@
 </span><span id="36" class="l"><a class="l" href="#36">36: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_testQueue" href="#_testQueue">testQueue</a>() {
 </span><span id="37" class="l"><a class="l" href="#37">37: </a>        <span class="php-var">$data</span> = <span class="php-keyword1">array</span>(
 </span><span id="38" class="l"><a class="l" href="#38">38: </a>            <span class="php-quote">'view'</span>    =&gt; <span class="php-quote">'emails.welcome'</span>,
-</span><span id="39" class="l"><a class="l" href="#39">39: </a>            <span class="php-quote">'link'</span>    =&gt; URL::route(<span class="php-quote">'account.activate'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'id'</span> =&gt; <span class="php-num">1</span>, <span class="php-quote">'code'</span> =&gt; <span class="php-num">1234</span>)),
-</span><span id="40" class="l"><a class="l" href="#40">40: </a>            <span class="php-quote">'email'</span>   =&gt; <span class="php-quote">'graham@mineuk.com'</span>,
-</span><span id="41" class="l"><a class="l" href="#41">41: </a>            <span class="php-quote">'subject'</span> =&gt; Config::get(<span class="php-quote">'cms.name'</span>).<span class="php-quote">' - Welcome'</span>,
-</span><span id="42" class="l"><a class="l" href="#42">42: </a>        );
-</span><span id="43" class="l"><a class="l" href="#43">43: </a>
-</span><span id="44" class="l"><a class="l" href="#44">44: </a>        Queue::push(<span class="php-quote">'GrahamCampbell\BootstrapCMS\Handlers\MailHandler'</span>, <span class="php-var">$data</span>);
-</span><span id="45" class="l"><a class="l" href="#45">45: </a>        <span class="php-keyword1">return</span> <span class="php-quote">'done'</span>;
-</span><span id="46" class="l"><a class="l" href="#46">46: </a>    }
-</span><span id="47" class="l"><a class="l" href="#47">47: </a>
-</span><span id="48" class="l"><a class="l" href="#48">48: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_testError" href="#_testError">testError</a>() {
-</span><span id="49" class="l"><a class="l" href="#49">49: </a>        Queue::push(<span class="php-quote">'GrahamCampbell\BootstrapCMS\Handlers\TestHandler'</span>, <span class="php-keyword1">array</span>());
-</span><span id="50" class="l"><a class="l" href="#50">50: </a>        <span class="php-keyword1">return</span> <span class="php-quote">'done'</span>;
-</span><span id="51" class="l"><a class="l" href="#51">51: </a>    }
-</span><span id="52" class="l"><a class="l" href="#52">52: </a>
-</span><span id="53" class="l"><a class="l" href="#53">53: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_addValue" href="#_addValue">addValue</a>(<span class="php-var">$value</span>) {
-</span><span id="54" class="l"><a class="l" href="#54">54: </a>        Cache::put(<span class="php-quote">'cachetest'</span>, <span class="php-var">$value</span>, <span class="php-num">10</span>);
-</span><span id="55" class="l"><a class="l" href="#55">55: </a>    }
-</span><span id="56" class="l"><a class="l" href="#56">56: </a>
-</span><span id="57" class="l"><a class="l" href="#57">57: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_getValue" href="#_getValue">getValue</a>() {
-</span><span id="58" class="l"><a class="l" href="#58">58: </a>        <span class="php-keyword1">return</span> Cache::get(<span class="php-quote">'cachetest'</span>);
-</span><span id="59" class="l"><a class="l" href="#59">59: </a>    }
-</span><span id="60" class="l"><a class="l" href="#60">60: </a>}
-</span><span id="61" class="l"><a class="l" href="#61">61: </a></span></code></pre>
+</span><span id="39" class="l"><a class="l" href="#39">39: </a>            <span class="php-quote">'url'</span>     =&gt; URL::route(<span class="php-quote">'pages.show'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'pages'</span> =&gt; <span class="php-quote">'home'</span>)),
+</span><span id="40" class="l"><a class="l" href="#40">40: </a>            <span class="php-quote">'link'</span>    =&gt; URL::route(<span class="php-quote">'account.activate'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'id'</span> =&gt; <span class="php-num">1</span>, <span class="php-quote">'code'</span> =&gt; <span class="php-num">1234</span>)),
+</span><span id="41" class="l"><a class="l" href="#41">41: </a>            <span class="php-quote">'email'</span>   =&gt; Config::get(<span class="php-quote">'workbench.email'</span>),
+</span><span id="42" class="l"><a class="l" href="#42">42: </a>            <span class="php-quote">'subject'</span> =&gt; Config::get(<span class="php-quote">'cms.name'</span>).<span class="php-quote">' - Welcome'</span>,
+</span><span id="43" class="l"><a class="l" href="#43">43: </a>        );
+</span><span id="44" class="l"><a class="l" href="#44">44: </a>
+</span><span id="45" class="l"><a class="l" href="#45">45: </a>        Queue::push(<span class="php-quote">'GrahamCampbell\BootstrapCMS\Handlers\MailHandler'</span>, <span class="php-var">$data</span>);
+</span><span id="46" class="l"><a class="l" href="#46">46: </a>        <span class="php-keyword1">return</span> <span class="php-quote">'done'</span>;
+</span><span id="47" class="l"><a class="l" href="#47">47: </a>    }
+</span><span id="48" class="l"><a class="l" href="#48">48: </a>
+</span><span id="49" class="l"><a class="l" href="#49">49: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_testError" href="#_testError">testError</a>() {
+</span><span id="50" class="l"><a class="l" href="#50">50: </a>        Queue::push(<span class="php-quote">'GrahamCampbell\BootstrapCMS\Handlers\TestHandler'</span>, <span class="php-keyword1">array</span>());
+</span><span id="51" class="l"><a class="l" href="#51">51: </a>        <span class="php-keyword1">return</span> <span class="php-quote">'done'</span>;
+</span><span id="52" class="l"><a class="l" href="#52">52: </a>    }
+</span><span id="53" class="l"><a class="l" href="#53">53: </a>
+</span><span id="54" class="l"><a class="l" href="#54">54: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_addValue" href="#_addValue">addValue</a>(<span class="php-var">$value</span>) {
+</span><span id="55" class="l"><a class="l" href="#55">55: </a>        Cache::put(<span class="php-quote">'cachetest'</span>, <span class="php-var">$value</span>, <span class="php-num">10</span>);
+</span><span id="56" class="l"><a class="l" href="#56">56: </a>    }
+</span><span id="57" class="l"><a class="l" href="#57">57: </a>
+</span><span id="58" class="l"><a class="l" href="#58">58: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_getValue" href="#_getValue">getValue</a>() {
+</span><span id="59" class="l"><a class="l" href="#59">59: </a>        <span class="php-keyword1">return</span> Cache::get(<span class="php-quote">'cachetest'</span>);
+</span><span id="60" class="l"><a class="l" href="#60">60: </a>    }
+</span><span id="61" class="l"><a class="l" href="#61">61: </a>}
+</span><span id="62" class="l"><a class="l" href="#62">62: </a></span></code></pre>
 
 	<div id="footer">
 		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>

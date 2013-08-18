@@ -8,7 +8,7 @@
 	<title>File app/src/GrahamCampbell/BootstrapCMS/Controllers/UserController.php</title>
 
 	<script type="text/javascript" src="resources/combined.js?2320924919"></script>
-	<script type="text/javascript" src="elementlist.js?4046822220"></script>
+	<script type="text/javascript" src="elementlist.js?232316487"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -183,7 +183,7 @@
 </span></span><span id="43" class="l"><a class="l" href="#43"> 43: </a><span class="php-comment">     */</span>
 </span><span id="44" class="l"><a class="l" href="#44"> 44: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_index" href="#_index">index</a>() {
 </span><span id="45" class="l"><a class="l" href="#45"> 45: </a>        <span class="php-comment">//TODO - use the UserProvider</span>
-</span><span id="46" class="l"><a class="l" href="#46"> 46: </a>        <span class="php-var">$users</span> = <span class="php-var">$this</span>-&gt;user-&gt;orderBy(<span class="php-quote">'first_name'</span>)-&gt;get(<span class="php-keyword1">array</span>(<span class="php-quote">'id'</span>, <span class="php-quote">'first_name'</span>, <span class="php-quote">'last_name'</span>, <span class="php-quote">'email'</span>));
+</span><span id="46" class="l"><a class="l" href="#46"> 46: </a>        <span class="php-var">$users</span> = UserProvider::index();
 </span><span id="47" class="l"><a class="l" href="#47"> 47: </a>        <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;viewMake(<span class="php-quote">'users.index'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'users'</span> =&gt; <span class="php-var">$users</span>));
 </span><span id="48" class="l"><a class="l" href="#48"> 48: </a>    }
 </span><span id="49" class="l"><a class="l" href="#49"> 49: </a>
