@@ -4,10 +4,10 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="generator" content="ApiGen 2.8.0" />
 
-	<title>Namespace GrahamCampbell\BootstrapCMS\Interfaces</title>
+	<title>Interface GrahamCampbell\BootstrapCMS\Providers\Interfaces\IPaginateProvider</title>
 
 	<script type="text/javascript" src="resources/combined.js?2320924919"></script>
-	<script type="text/javascript" src="elementlist.js?232316487"></script>
+	<script type="text/javascript" src="elementlist.js?4043428144"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -35,8 +35,6 @@
 						</li>
 				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Handlers.html">Handlers</a>
 						</li>
-				<li class="active"><a href="namespace-GrahamCampbell.BootstrapCMS.Interfaces.html">Interfaces</a>
-						</li>
 				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Models.html">Models<span></span></a>
 						<ul>
 				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Models.Common.html">Common</a>
@@ -50,11 +48,11 @@
 				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Models.Relations.Interfaces.html">Interfaces</a>
 						</li>
 							</ul></li></ul></li>
-				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Providers.html">Providers<span></span></a>
+				<li class="active"><a href="namespace-GrahamCampbell.BootstrapCMS.Providers.html">Providers<span></span></a>
 						<ul>
 				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Providers.Common.html">Common</a>
 						</li>
-				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Providers.Interfaces.html">Interfaces</a>
+				<li class="active"><a href="namespace-GrahamCampbell.BootstrapCMS.Providers.Interfaces.html">Interfaces</a>
 						</li>
 							</ul></li>
 				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Subscribers.html">Subscribers</a>
@@ -84,7 +82,9 @@
 
 			<h3>Interfaces</h3>
 			<ul>
-				<li><a href="class-GrahamCampbell.BootstrapCMS.Interfaces.ICacheable.html">ICacheable</a></li>
+				<li><a href="class-GrahamCampbell.BootstrapCMS.Providers.Interfaces.IBaseProvider.html">IBaseProvider</a></li>
+				<li class="active"><a href="class-GrahamCampbell.BootstrapCMS.Providers.Interfaces.IPaginateProvider.html">IPaginateProvider</a></li>
+				<li><a href="class-GrahamCampbell.BootstrapCMS.Providers.Interfaces.ISlugProvider.html">ISlugProvider</a></li>
 			</ul>
 
 
@@ -110,9 +110,10 @@
 			<li>
 				<a href="index.html" title="Overview"><span>Overview</span></a>
 			</li>
-			<li class="active">
-<span>Namespace</span>			</li>
 			<li>
+				<a href="namespace-GrahamCampbell.BootstrapCMS.Providers.Interfaces.html" title="Summary of GrahamCampbell\BootstrapCMS\Providers\Interfaces"><span>Namespace</span></a>
+			</li>
+			<li class="active">
 <span>Class</span>			</li>
 		</ul>
 		<ul>
@@ -124,19 +125,83 @@
 		</ul>
 	</div>
 
-<div id="content" class="namespace">
-	<h1>Namespace <a href="namespace-GrahamCampbell.html">GrahamCampbell</a>\<a href="namespace-GrahamCampbell.BootstrapCMS.html">BootstrapCMS</a>\Interfaces</h1>
+<div id="content" class="class">
+	<h1>Interface IPaginateProvider</h1>
 
 
 
 
-<table class="summary" id="interfaces">
-<caption>Interfaces summary</caption>
-<tr>
-	<td class="name"><a href="class-GrahamCampbell.BootstrapCMS.Interfaces.ICacheable.html">ICacheable</a></td>
-	<td></td>
-</tr>
-</table>
+
+
+
+	<div>
+		<h4>Direct known implementers</h4>
+			<a href="class-GrahamCampbell.BootstrapCMS.Providers.EventProvider.html">GrahamCampbell\BootstrapCMS\Providers\EventProvider</a>, 
+			<a href="class-GrahamCampbell.BootstrapCMS.Providers.PageProvider.html">GrahamCampbell\BootstrapCMS\Providers\PageProvider</a>, 
+			<a href="class-GrahamCampbell.BootstrapCMS.Providers.PostProvider.html">GrahamCampbell\BootstrapCMS\Providers\PostProvider</a>, 
+			<a href="class-GrahamCampbell.BootstrapCMS.Providers.UserProvider.html">GrahamCampbell\BootstrapCMS\Providers\UserProvider</a>
+	</div>
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-GrahamCampbell.html">GrahamCampbell</a>\<a href="namespace-GrahamCampbell.BootstrapCMS.html">BootstrapCMS</a>\<a href="namespace-GrahamCampbell.BootstrapCMS.Providers.html">Providers</a>\<a href="namespace-GrahamCampbell.BootstrapCMS.Providers.Interfaces.html">Interfaces</a><br />
+		
+
+		<b>Located at</b> <a href="source-class-GrahamCampbell.BootstrapCMS.Providers.Interfaces.IPaginateProvider.html#3-7" title="Go to source code">app/src/GrahamCampbell/BootstrapCMS/Providers/Interfaces/IPaginateProvider.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="paginate" id="_paginate">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_paginate">#</a>
+		<code><a href="source-class-GrahamCampbell.BootstrapCMS.Providers.Interfaces.IPaginateProvider.html#5" title="Go to source code">paginate</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

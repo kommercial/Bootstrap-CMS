@@ -7,7 +7,7 @@
 	<title>Trait GrahamCampbell\BootstrapCMS\Providers\Common\TraitBaseProvider</title>
 
 	<script type="text/javascript" src="resources/combined.js?2320924919"></script>
-	<script type="text/javascript" src="elementlist.js?232316487"></script>
+	<script type="text/javascript" src="elementlist.js?4043428144"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -34,8 +34,6 @@
 				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Facades.html">Facades</a>
 						</li>
 				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Handlers.html">Handlers</a>
-						</li>
-				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Interfaces.html">Interfaces</a>
 						</li>
 				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Models.html">Models<span></span></a>
 						<ul>
@@ -86,6 +84,7 @@
 			<h3>Traits</h3>
 			<ul>
 				<li class="active"><a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html">TraitBaseProvider</a></li>
+				<li><a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitPaginateProvider.html">TraitPaginateProvider</a></li>
 				<li><a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitSlugProvider.html">TraitSlugProvider</a></li>
 			</ul>
 
@@ -158,7 +157,7 @@
 		<b>Namespace:</b> <a href="namespace-GrahamCampbell.html">GrahamCampbell</a>\<a href="namespace-GrahamCampbell.BootstrapCMS.html">BootstrapCMS</a>\<a href="namespace-GrahamCampbell.BootstrapCMS.Providers.html">Providers</a>\<a href="namespace-GrahamCampbell.BootstrapCMS.Providers.Common.html">Common</a><br />
 		
 
-		<b>Located at</b> <a href="source-class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#5-81" title="Go to source code">app/src/GrahamCampbell/BootstrapCMS/Providers/Common/TraitBaseProvider.php</a><br />
+		<b>Located at</b> <a href="source-class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#6-27" title="Go to source code">app/src/GrahamCampbell/BootstrapCMS/Providers/Common/TraitBaseProvider.php</a><br />
 	</div>
 
 
@@ -176,7 +175,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_create">#</a>
-		<code><a href="source-class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#7-10" title="Go to source code">create</a>( <span>array <var>$input</var></span> )</code>
+		<code><a href="source-class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#8-11" title="Go to source code">create</a>( <span>array <var>$input</var></span> )</code>
 
 		<div class="description short">
 			
@@ -194,7 +193,7 @@
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="findById" id="_findById">
+	<tr data-order="find" id="_find">
 
 		<td class="attributes"><code>
 			 public 
@@ -204,8 +203,8 @@
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_findById">#</a>
-		<code><a href="source-class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#12-15" title="Go to source code">findById</a>( <span>mixed <var>$id</var></span>, <span>array <var>$columns</var> = <span class="php-keyword1">array</span>(<span class="php-quote">'*'</span>)</span> )</code>
+		<a class="anchor" href="#_find">#</a>
+		<code><a href="source-class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#13-16" title="Go to source code">find</a>( <span>mixed <var>$id</var></span>, <span>array <var>$columns</var> = <span class="php-keyword1">array</span>(<span class="php-quote">'*'</span>)</span> )</code>
 
 		<div class="description short">
 			
@@ -223,181 +222,7 @@
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="goGet" id="_goGet">
-
-		<td class="attributes"><code>
-			 protected 
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_goGet">#</a>
-		<code><a href="source-class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#17-37" title="Go to source code">goGet</a>( <span>mixed <var>$name</var></span> )</code>
-
-		<div class="description short">
-			
-		</div>
-
-		<div class="description detailed hidden">
-			
-
-
-
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="getCache" id="_getCache">
-
-		<td class="attributes"><code>
-			 protected 
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_getCache">#</a>
-		<code><a href="source-class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#39-42" title="Go to source code">getCache</a>( <span>mixed <var>$name</var></span> )</code>
-
-		<div class="description short">
-			
-		</div>
-
-		<div class="description detailed hidden">
-			
-
-
-
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="setCache" id="_setCache">
-
-		<td class="attributes"><code>
-			 protected 
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_setCache">#</a>
-		<code><a href="source-class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#44-47" title="Go to source code">setCache</a>( <span>mixed <var>$name</var></span>, <span>mixed <var>$value</var></span> )</code>
-
-		<div class="description short">
-			
-		</div>
-
-		<div class="description detailed hidden">
-			
-
-
-
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="flushCache" id="_flushCache">
-
-		<td class="attributes"><code>
-			 protected 
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_flushCache">#</a>
-		<code><a href="source-class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#49-52" title="Go to source code">flushCache</a>( )</code>
-
-		<div class="description short">
-			
-		</div>
-
-		<div class="description detailed hidden">
-			
-
-
-
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="purgeCache" id="_purgeCache">
-
-		<td class="attributes"><code>
-			 protected 
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_purgeCache">#</a>
-		<code><a href="source-class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#54-57" title="Go to source code">purgeCache</a>( <span>mixed <var>$name</var></span> )</code>
-
-		<div class="description short">
-			
-		</div>
-
-		<div class="description detailed hidden">
-			
-
-
-
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="validCache" id="_validCache">
-
-		<td class="attributes"><code>
-			 protected 
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_validCache">#</a>
-		<code><a href="source-class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#59-62" title="Go to source code">validCache</a>( <span>mixed <var>$name</var></span> )</code>
-
-		<div class="description short">
-			
-		</div>
-
-		<div class="description detailed hidden">
-			
-
-
-
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="flush" id="_flush">
+	<tr data-order="index" id="_index">
 
 		<td class="attributes"><code>
 			 public 
@@ -407,66 +232,8 @@
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_flush">#</a>
-		<code><a href="source-class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#64-68" title="Go to source code">flush</a>( )</code>
-
-		<div class="description short">
-			
-		</div>
-
-		<div class="description detailed hidden">
-			
-
-
-
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="purge" id="_purge">
-
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_purge">#</a>
-		<code><a href="source-class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#70-74" title="Go to source code">purge</a>( <span>mixed <var>$name</var> = <span class="php-quote">'index'</span></span> )</code>
-
-		<div class="description short">
-			
-		</div>
-
-		<div class="description detailed hidden">
-			
-
-
-
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="refresh" id="_refresh">
-
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_refresh">#</a>
-		<code><a href="source-class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#76-80" title="Go to source code">refresh</a>( <span>mixed <var>$name</var> = <span class="php-quote">'index'</span></span> )</code>
+		<a class="anchor" href="#_index">#</a>
+		<code><a href="source-class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#18-26" title="Go to source code">index</a>( )</code>
 
 		<div class="description short">
 			

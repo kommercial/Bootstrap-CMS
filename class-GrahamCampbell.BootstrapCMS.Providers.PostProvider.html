@@ -7,7 +7,7 @@
 	<title>Class GrahamCampbell\BootstrapCMS\Providers\PostProvider</title>
 
 	<script type="text/javascript" src="resources/combined.js?2320924919"></script>
-	<script type="text/javascript" src="elementlist.js?232316487"></script>
+	<script type="text/javascript" src="elementlist.js?4043428144"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -34,8 +34,6 @@
 				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Facades.html">Facades</a>
 						</li>
 				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Handlers.html">Handlers</a>
-						</li>
-				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Interfaces.html">Interfaces</a>
 						</li>
 				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Models.html">Models<span></span></a>
 						<ul>
@@ -141,8 +139,6 @@
 			<a href="class-GrahamCampbell.BootstrapCMS.Providers.BaseProvider.html"><span>GrahamCampbell\BootstrapCMS\Providers\BaseProvider</span></a>
 			
 			 implements 
-				<a href="class-GrahamCampbell.BootstrapCMS.Interfaces.ICacheable.html"><span>GrahamCampbell\BootstrapCMS\Interfaces\ICacheable</span></a>, 
-			
 				<a href="class-GrahamCampbell.BootstrapCMS.Providers.Interfaces.IBaseProvider.html"><span>GrahamCampbell\BootstrapCMS\Providers\Interfaces\IBaseProvider</span></a>
 			
 			 uses 
@@ -152,7 +148,11 @@
 		<dd style="padding-left:30px">
 			<img src="resources/inherit.png" alt="Extended by" />
 <b><span>GrahamCampbell\BootstrapCMS\Providers\PostProvider</span></b>			
+			 implements 
+				<a href="class-GrahamCampbell.BootstrapCMS.Providers.Interfaces.IPaginateProvider.html"><span>GrahamCampbell\BootstrapCMS\Providers\Interfaces\IPaginateProvider</span></a>
 			
+			 uses 
+				<a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitPaginateProvider.html"><span>GrahamCampbell\BootstrapCMS\Providers\Common\TraitPaginateProvider</span></a>
 			
 		</dd>
 	</dl>
@@ -170,79 +170,46 @@
 		<b>Namespace:</b> <a href="namespace-GrahamCampbell.html">GrahamCampbell</a>\<a href="namespace-GrahamCampbell.BootstrapCMS.html">BootstrapCMS</a>\<a href="namespace-GrahamCampbell.BootstrapCMS.Providers.html">Providers</a><br />
 		
 
-		<b>Located at</b> <a href="source-class-GrahamCampbell.BootstrapCMS.Providers.PostProvider.html#3-12" title="Go to source code">app/src/GrahamCampbell/BootstrapCMS/Providers/PostProvider.php</a><br />
+		<b>Located at</b> <a href="source-class-GrahamCampbell.BootstrapCMS.Providers.PostProvider.html#3-9" title="Go to source code">app/src/GrahamCampbell/BootstrapCMS/Providers/PostProvider.php</a><br />
 	</div>
 
 
 
-	<table class="summary" id="methods">
-	<caption>Methods summary</caption>
-	<tr data-order="index" id="_index">
-
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_index">#</a>
-		<code><a href="source-class-GrahamCampbell.BootstrapCMS.Providers.PostProvider.html#8-11" title="Go to source code">index</a>( )</code>
-
-		<div class="description short">
-			
-		</div>
-
-		<div class="description detailed hidden">
-			
-
-
-
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	</table>
 
 	<table class="summary inherited">
 	<caption>Methods inherited from <a href="class-GrahamCampbell.BootstrapCMS.Providers.Interfaces.IBaseProvider.html#methods">GrahamCampbell\BootstrapCMS\Providers\Interfaces\IBaseProvider</a></caption>
 	<tr>
 		<td><code>
 			<a href="class-GrahamCampbell.BootstrapCMS.Providers.Interfaces.IBaseProvider.html#_create">create()</a>, 
-			<a href="class-GrahamCampbell.BootstrapCMS.Providers.Interfaces.IBaseProvider.html#_findById">findById()</a>
+			<a href="class-GrahamCampbell.BootstrapCMS.Providers.Interfaces.IBaseProvider.html#_find">find()</a>, 
+			<a href="class-GrahamCampbell.BootstrapCMS.Providers.Interfaces.IBaseProvider.html#_index">index()</a>
 		</code></td>
 	</tr>
 	</table>
 	<table class="summary inherited">
-	<caption>Methods inherited from <a href="class-GrahamCampbell.BootstrapCMS.Interfaces.ICacheable.html#methods">GrahamCampbell\BootstrapCMS\Interfaces\ICacheable</a></caption>
+	<caption>Methods inherited from <a href="class-GrahamCampbell.BootstrapCMS.Providers.Interfaces.IPaginateProvider.html#methods">GrahamCampbell\BootstrapCMS\Providers\Interfaces\IPaginateProvider</a></caption>
 	<tr>
 		<td><code>
-			<a href="class-GrahamCampbell.BootstrapCMS.Interfaces.ICacheable.html#_flush">flush()</a>, 
-			<a href="class-GrahamCampbell.BootstrapCMS.Interfaces.ICacheable.html#_purge">purge()</a>, 
-			<a href="class-GrahamCampbell.BootstrapCMS.Interfaces.ICacheable.html#_refresh">refresh()</a>
+			<a href="class-GrahamCampbell.BootstrapCMS.Providers.Interfaces.IPaginateProvider.html#_paginate">paginate()</a>
 		</code></td>
 	</tr>
 	</table>
 
 	<table class="summary used">
+	<caption>Methods used from <a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitPaginateProvider.html#methods">GrahamCampbell\BootstrapCMS\Providers\Common\TraitPaginateProvider</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitPaginateProvider.html#_paginate">()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary used">
 	<caption>Methods used from <a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#methods">GrahamCampbell\BootstrapCMS\Providers\Common\TraitBaseProvider</a></caption>
 	<tr>
 		<td><code>
 			<a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#_create">()</a>, 
-			<a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#_findById">()</a>, 
-			<a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#_flush">()</a>, 
-			<a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#_flushCache">()</a>, 
-			<a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#_getCache">()</a>, 
-			<a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#_goGet">()</a>, 
-			<a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#_purge">()</a>, 
-			<a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#_purgeCache">()</a>, 
-			<a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#_refresh">()</a>, 
-			<a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#_setCache">()</a>, 
-			<a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#_validCache">()</a>
+			<a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#_find">()</a>, 
+			<a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#_index">()</a>
 		</code></td>
 	</tr>
 	</table>
@@ -265,7 +232,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-GrahamCampbell.BootstrapCMS.Providers.PostProvider.html#5" title="Go to source code"><var>$model</var></a>
+				<a href="source-class-GrahamCampbell.BootstrapCMS.Providers.PostProvider.html#7" title="Go to source code"><var>$model</var></a>
 		</td>
 		<td class="value"><code><span class="php-quote">'GrahamCampbell\BootstrapCMS\Models\Post'</span></code></td>
 		<td class="description"><div>

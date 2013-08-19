@@ -5,10 +5,10 @@
 	<meta name="generator" content="ApiGen 2.8.0" />
 	<meta name="robots" content="noindex" />
 
-	<title>File app/src/GrahamCampbell/BootstrapCMS/Interfaces/ICacheable.php</title>
+	<title>File app/src/GrahamCampbell/BootstrapCMS/Providers/Common/TraitPaginateProvider.php</title>
 
 	<script type="text/javascript" src="resources/combined.js?2320924919"></script>
-	<script type="text/javascript" src="elementlist.js?232316487"></script>
+	<script type="text/javascript" src="elementlist.js?4043428144"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -36,8 +36,6 @@
 						</li>
 				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Handlers.html">Handlers</a>
 						</li>
-				<li class="active"><a href="namespace-GrahamCampbell.BootstrapCMS.Interfaces.html">Interfaces</a>
-						</li>
 				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Models.html">Models<span></span></a>
 						<ul>
 				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Models.Common.html">Common</a>
@@ -51,9 +49,9 @@
 				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Models.Relations.Interfaces.html">Interfaces</a>
 						</li>
 							</ul></li></ul></li>
-				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Providers.html">Providers<span></span></a>
+				<li class="active"><a href="namespace-GrahamCampbell.BootstrapCMS.Providers.html">Providers<span></span></a>
 						<ul>
-				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Providers.Common.html">Common</a>
+				<li class="active"><a href="namespace-GrahamCampbell.BootstrapCMS.Providers.Common.html">Common</a>
 						</li>
 				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Providers.Interfaces.html">Interfaces</a>
 						</li>
@@ -83,11 +81,13 @@
 
 		<div id="elements">
 
-			<h3>Interfaces</h3>
-			<ul>
-				<li class="active"><a href="class-GrahamCampbell.BootstrapCMS.Interfaces.ICacheable.html">ICacheable</a></li>
-			</ul>
 
+			<h3>Traits</h3>
+			<ul>
+				<li><a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html">TraitBaseProvider</a></li>
+				<li class="active"><a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitPaginateProvider.html">TraitPaginateProvider</a></li>
+				<li><a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitSlugProvider.html">TraitSlugProvider</a></li>
+			</ul>
 
 
 
@@ -112,10 +112,10 @@
 				<a href="index.html" title="Overview"><span>Overview</span></a>
 			</li>
 			<li>
-				<a href="namespace-GrahamCampbell.BootstrapCMS.Interfaces.html" title="Summary of GrahamCampbell\BootstrapCMS\Interfaces"><span>Namespace</span></a>
+				<a href="namespace-GrahamCampbell.BootstrapCMS.Providers.Common.html" title="Summary of GrahamCampbell\BootstrapCMS\Providers\Common"><span>Namespace</span></a>
 			</li>
 			<li>
-				<a href="class-GrahamCampbell.BootstrapCMS.Interfaces.ICacheable.html" title="Summary of GrahamCampbell\BootstrapCMS\Interfaces\ICacheable"><span>Class</span></a>
+				<a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitPaginateProvider.html" title="Summary of GrahamCampbell\BootstrapCMS\Providers\Common\TraitPaginateProvider"><span>Class</span></a>
 			</li>
 		</ul>
 		<ul>
@@ -127,18 +127,24 @@
 		</ul>
 	</div>
 
-<pre><code><span id="1" class="l"><a class="l" href="#1"> 1: </a><span class="xlang">&lt;?php</span> <span class="php-keyword1">namespace</span> GrahamCampbell\BootstrapCMS\Interfaces;
+<pre><code><span id="1" class="l"><a class="l" href="#1"> 1: </a><span class="xlang">&lt;?php</span> <span class="php-keyword1">namespace</span> GrahamCampbell\BootstrapCMS\Providers\Common;
 </span><span id="2" class="l"><a class="l" href="#2"> 2: </a>
-</span><span id="3" class="l"><a class="l" href="#3"> 3: </a><span class="php-keyword1">interface</span> <a id="ICacheable" href="#ICacheable">ICacheable</a> {
-</span><span id="4" class="l"><a class="l" href="#4"> 4: </a>
-</span><span id="5" class="l"><a class="l" href="#5"> 5: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <span class="php-keyword2">flush</span>();
-</span><span id="6" class="l"><a class="l" href="#6"> 6: </a>
-</span><span id="7" class="l"><a class="l" href="#7"> 7: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_purge" href="#_purge">purge</a>(<span class="php-var">$name</span>);
-</span><span id="8" class="l"><a class="l" href="#8"> 8: </a>
-</span><span id="9" class="l"><a class="l" href="#9"> 9: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_refresh" href="#_refresh">refresh</a>(<span class="php-var">$name</span>);
+</span><span id="3" class="l"><a class="l" href="#3"> 3: </a><span class="php-keyword1">use</span> Config;
+</span><span id="4" class="l"><a class="l" href="#4"> 4: </a><span class="php-keyword1">use</span> Cache;
+</span><span id="5" class="l"><a class="l" href="#5"> 5: </a>
+</span><span id="6" class="l"><a class="l" href="#6"> 6: </a><span class="php-keyword1">trait</span> <a id="TraitPaginateProvider" href="#TraitPaginateProvider">TraitPaginateProvider</a> {
+</span><span id="7" class="l"><a class="l" href="#7"> 7: </a>
+</span><span id="8" class="l"><a class="l" href="#8"> 8: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_paginate" href="#_paginate">paginate</a>() {
+</span><span id="9" class="l"><a class="l" href="#9"> 9: </a>        <span class="php-var">$model</span> = <span class="php-var">$this</span>-&gt;model;
 </span><span id="10" class="l"><a class="l" href="#10">10: </a>
-</span><span id="11" class="l"><a class="l" href="#11">11: </a>}
-</span><span id="12" class="l"><a class="l" href="#12">12: </a></span></code></pre>
+</span><span id="11" class="l"><a class="l" href="#11">11: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword2">property_exists</span>(<span class="php-var">$model</span>, <span class="php-quote">'order'</span>)) {
+</span><span id="12" class="l"><a class="l" href="#12">12: </a>            <span class="php-keyword1">return</span> <span class="php-var">$model</span>::orderBy(<span class="php-var">$model</span>::<span class="php-var">$order</span>, <span class="php-var">$model</span>::<span class="php-var">$sort</span>)-&gt;paginate(<span class="php-var">$model</span>::<span class="php-var">$paginate</span>, <span class="php-var">$model</span>::<span class="php-var">$index</span>);
+</span><span id="13" class="l"><a class="l" href="#13">13: </a>        }
+</span><span id="14" class="l"><a class="l" href="#14">14: </a>
+</span><span id="15" class="l"><a class="l" href="#15">15: </a>        <span class="php-keyword1">return</span> <span class="php-var">$model</span>::paginate(<span class="php-var">$model</span>::<span class="php-var">$paginate</span>, <span class="php-var">$model</span>::<span class="php-var">$index</span>);
+</span><span id="16" class="l"><a class="l" href="#16">16: </a>    }
+</span><span id="17" class="l"><a class="l" href="#17">17: </a>}
+</span><span id="18" class="l"><a class="l" href="#18">18: </a></span></code></pre>
 
 	<div id="footer">
 		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>

@@ -8,7 +8,7 @@
 	<title>File app/src/GrahamCampbell/BootstrapCMS/Controllers/PageController.php</title>
 
 	<script type="text/javascript" src="resources/combined.js?2320924919"></script>
-	<script type="text/javascript" src="elementlist.js?232316487"></script>
+	<script type="text/javascript" src="elementlist.js?4043428144"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -35,8 +35,6 @@
 				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Facades.html">Facades</a>
 						</li>
 				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Handlers.html">Handlers</a>
-						</li>
-				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Interfaces.html">Interfaces</a>
 						</li>
 				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Models.html">Models<span></span></a>
 						<ul>
@@ -224,7 +222,7 @@
 </span></span><span id="84" class="l"><a class="l" href="#84"> 84: </a><span class="php-comment">     * @return Response
 </span></span><span id="85" class="l"><a class="l" href="#85"> 85: </a><span class="php-comment">     */</span>
 </span><span id="86" class="l"><a class="l" href="#86"> 86: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_show" href="#_show">show</a>(<span class="php-var">$slug</span>) {
-</span><span id="87" class="l"><a class="l" href="#87"> 87: </a>        <span class="php-var">$page</span> = PageProvider::findBySlug(<span class="php-var">$slug</span>);
+</span><span id="87" class="l"><a class="l" href="#87"> 87: </a>        <span class="php-var">$page</span> = PageProvider::find(<span class="php-var">$slug</span>);
 </span><span id="88" class="l"><a class="l" href="#88"> 88: </a>        <span class="php-var">$this</span>-&gt;checkPage(<span class="php-var">$page</span>, <span class="php-var">$slug</span>);
 </span><span id="89" class="l"><a class="l" href="#89"> 89: </a>
 </span><span id="90" class="l"><a class="l" href="#90"> 90: </a>        <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;viewMake(<span class="php-quote">'pages.show'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'page'</span> =&gt; <span class="php-var">$page</span>));
@@ -237,7 +235,7 @@
 </span></span><span id="97" class="l"><a class="l" href="#97"> 97: </a><span class="php-comment">     * @return Response
 </span></span><span id="98" class="l"><a class="l" href="#98"> 98: </a><span class="php-comment">     */</span>
 </span><span id="99" class="l"><a class="l" href="#99"> 99: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_edit" href="#_edit">edit</a>(<span class="php-var">$slug</span>) {
-</span><span id="100" class="l"><a class="l" href="#100">100: </a>        <span class="php-var">$page</span> = PageProvider::findBySlug(<span class="php-var">$slug</span>);
+</span><span id="100" class="l"><a class="l" href="#100">100: </a>        <span class="php-var">$page</span> = PageProvider::find(<span class="php-var">$slug</span>);
 </span><span id="101" class="l"><a class="l" href="#101">101: </a>        <span class="php-var">$this</span>-&gt;checkPage(<span class="php-var">$page</span>, <span class="php-var">$slug</span>);
 </span><span id="102" class="l"><a class="l" href="#102">102: </a>
 </span><span id="103" class="l"><a class="l" href="#103">103: </a>        <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;viewMake(<span class="php-quote">'pages.edit'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'page'</span> =&gt; <span class="php-var">$page</span>));
@@ -267,7 +265,7 @@
 </span><span id="127" class="l"><a class="l" href="#127">127: </a>            <span class="php-keyword1">return</span> Redirect::route(<span class="php-quote">'pages.edit'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'pages'</span> =&gt; <span class="php-var">$slug</span>))-&gt;withInput()-&gt;withErrors(<span class="php-var">$val</span>-&gt;errors());
 </span><span id="128" class="l"><a class="l" href="#128">128: </a>        }
 </span><span id="129" class="l"><a class="l" href="#129">129: </a>
-</span><span id="130" class="l"><a class="l" href="#130">130: </a>        <span class="php-var">$page</span> = PageProvider::findBySlug(<span class="php-var">$slug</span>);
+</span><span id="130" class="l"><a class="l" href="#130">130: </a>        <span class="php-var">$page</span> = PageProvider::find(<span class="php-var">$slug</span>);
 </span><span id="131" class="l"><a class="l" href="#131">131: </a>        <span class="php-var">$this</span>-&gt;checkPage(<span class="php-var">$page</span>, <span class="php-var">$slug</span>);
 </span><span id="132" class="l"><a class="l" href="#132">132: </a>
 </span><span id="133" class="l"><a class="l" href="#133">133: </a>        <span class="php-var">$checkupdate</span> = <span class="php-var">$this</span>-&gt;checkUpdate(<span class="php-var">$input</span>, <span class="php-var">$slug</span>);
@@ -289,7 +287,7 @@
 </span></span><span id="149" class="l"><a class="l" href="#149">149: </a><span class="php-comment">     * @return Response
 </span></span><span id="150" class="l"><a class="l" href="#150">150: </a><span class="php-comment">     */</span>
 </span><span id="151" class="l"><a class="l" href="#151">151: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_destroy" href="#_destroy">destroy</a>(<span class="php-var">$slug</span>) {
-</span><span id="152" class="l"><a class="l" href="#152">152: </a>        <span class="php-var">$page</span> = PageProvider::findBySlug(<span class="php-var">$slug</span>);
+</span><span id="152" class="l"><a class="l" href="#152">152: </a>        <span class="php-var">$page</span> = PageProvider::find(<span class="php-var">$slug</span>);
 </span><span id="153" class="l"><a class="l" href="#153">153: </a>        <span class="php-var">$this</span>-&gt;checkPage(<span class="php-var">$page</span>, <span class="php-var">$slug</span>);
 </span><span id="154" class="l"><a class="l" href="#154">154: </a>
 </span><span id="155" class="l"><a class="l" href="#155">155: </a>        <span class="php-var">$checkdelete</span> = <span class="php-var">$this</span>-&gt;checkDelete(<span class="php-var">$slug</span>);

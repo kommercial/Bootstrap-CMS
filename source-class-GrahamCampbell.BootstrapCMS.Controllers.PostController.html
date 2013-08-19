@@ -8,7 +8,7 @@
 	<title>File app/src/GrahamCampbell/BootstrapCMS/Controllers/PostController.php</title>
 
 	<script type="text/javascript" src="resources/combined.js?2320924919"></script>
-	<script type="text/javascript" src="elementlist.js?232316487"></script>
+	<script type="text/javascript" src="elementlist.js?4043428144"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -35,8 +35,6 @@
 				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Facades.html">Facades</a>
 						</li>
 				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Handlers.html">Handlers</a>
-						</li>
-				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Interfaces.html">Interfaces</a>
 						</li>
 				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Models.html">Models<span></span></a>
 						<ul>
@@ -219,10 +217,10 @@
 </span></span><span id="79" class="l"><a class="l" href="#79"> 79: </a><span class="php-comment">     * @return Response
 </span></span><span id="80" class="l"><a class="l" href="#80"> 80: </a><span class="php-comment">     */</span>
 </span><span id="81" class="l"><a class="l" href="#81"> 81: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_show" href="#_show">show</a>(<span class="php-var">$id</span>) {
-</span><span id="82" class="l"><a class="l" href="#82"> 82: </a>        <span class="php-var">$post</span> = PostProvider::findById(<span class="php-var">$id</span>);
+</span><span id="82" class="l"><a class="l" href="#82"> 82: </a>        <span class="php-var">$post</span> = PostProvider::find(<span class="php-var">$id</span>);
 </span><span id="83" class="l"><a class="l" href="#83"> 83: </a>        <span class="php-var">$this</span>-&gt;checkPost(<span class="php-var">$post</span>);
 </span><span id="84" class="l"><a class="l" href="#84"> 84: </a>
-</span><span id="85" class="l"><a class="l" href="#85"> 85: </a>        <span class="php-var">$comments</span> = <span class="php-var">$post</span>-&gt;getCommentsReversed();
+</span><span id="85" class="l"><a class="l" href="#85"> 85: </a>        <span class="php-var">$comments</span> = <span class="php-var">$post</span>-&gt;getComments();
 </span><span id="86" class="l"><a class="l" href="#86"> 86: </a>
 </span><span id="87" class="l"><a class="l" href="#87"> 87: </a>        <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;viewMake(<span class="php-quote">'posts.show'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'post'</span> =&gt; <span class="php-var">$post</span>, <span class="php-quote">'comments'</span> =&gt; <span class="php-var">$comments</span>));
 </span><span id="88" class="l"><a class="l" href="#88"> 88: </a>    }
@@ -234,7 +232,7 @@
 </span></span><span id="94" class="l"><a class="l" href="#94"> 94: </a><span class="php-comment">     * @return Response
 </span></span><span id="95" class="l"><a class="l" href="#95"> 95: </a><span class="php-comment">     */</span>
 </span><span id="96" class="l"><a class="l" href="#96"> 96: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_edit" href="#_edit">edit</a>(<span class="php-var">$id</span>) {
-</span><span id="97" class="l"><a class="l" href="#97"> 97: </a>        <span class="php-var">$post</span> = PostProvider::findById(<span class="php-var">$id</span>);
+</span><span id="97" class="l"><a class="l" href="#97"> 97: </a>        <span class="php-var">$post</span> = PostProvider::find(<span class="php-var">$id</span>);
 </span><span id="98" class="l"><a class="l" href="#98"> 98: </a>        <span class="php-var">$this</span>-&gt;checkPost(<span class="php-var">$post</span>);
 </span><span id="99" class="l"><a class="l" href="#99"> 99: </a>
 </span><span id="100" class="l"><a class="l" href="#100">100: </a>        <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;viewMake(<span class="php-quote">'posts.edit'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'post'</span> =&gt; <span class="php-var">$post</span>));
@@ -261,7 +259,7 @@
 </span><span id="121" class="l"><a class="l" href="#121">121: </a>            <span class="php-keyword1">return</span> Redirect::route(<span class="php-quote">'blog.posts.edit'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'posts'</span> =&gt; <span class="php-var">$id</span>))-&gt;withInput()-&gt;withErrors(<span class="php-var">$val</span>-&gt;errors());
 </span><span id="122" class="l"><a class="l" href="#122">122: </a>        }
 </span><span id="123" class="l"><a class="l" href="#123">123: </a>
-</span><span id="124" class="l"><a class="l" href="#124">124: </a>        <span class="php-var">$post</span> = PostProvider::findById(<span class="php-var">$id</span>);
+</span><span id="124" class="l"><a class="l" href="#124">124: </a>        <span class="php-var">$post</span> = PostProvider::find(<span class="php-var">$id</span>);
 </span><span id="125" class="l"><a class="l" href="#125">125: </a>        <span class="php-var">$this</span>-&gt;checkPost(<span class="php-var">$post</span>);
 </span><span id="126" class="l"><a class="l" href="#126">126: </a>
 </span><span id="127" class="l"><a class="l" href="#127">127: </a>        <span class="php-var">$post</span>-&gt;update(<span class="php-var">$input</span>);
@@ -277,7 +275,7 @@
 </span></span><span id="137" class="l"><a class="l" href="#137">137: </a><span class="php-comment">     * @return Response
 </span></span><span id="138" class="l"><a class="l" href="#138">138: </a><span class="php-comment">     */</span>
 </span><span id="139" class="l"><a class="l" href="#139">139: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_destroy" href="#_destroy">destroy</a>(<span class="php-var">$id</span>) {
-</span><span id="140" class="l"><a class="l" href="#140">140: </a>        <span class="php-var">$post</span> = PostProvider::findById(<span class="php-var">$id</span>);
+</span><span id="140" class="l"><a class="l" href="#140">140: </a>        <span class="php-var">$post</span> = PostProvider::find(<span class="php-var">$id</span>);
 </span><span id="141" class="l"><a class="l" href="#141">141: </a>        <span class="php-var">$this</span>-&gt;checkPost(<span class="php-var">$post</span>);
 </span><span id="142" class="l"><a class="l" href="#142">142: </a>
 </span><span id="143" class="l"><a class="l" href="#143">143: </a>        <span class="php-var">$post</span>-&gt;<span class="php-keyword2">delete</span>();

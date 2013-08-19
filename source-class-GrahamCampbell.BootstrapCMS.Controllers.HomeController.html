@@ -8,7 +8,7 @@
 	<title>File app/src/GrahamCampbell/BootstrapCMS/Controllers/HomeController.php</title>
 
 	<script type="text/javascript" src="resources/combined.js?2320924919"></script>
-	<script type="text/javascript" src="elementlist.js?232316487"></script>
+	<script type="text/javascript" src="elementlist.js?4043428144"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -35,8 +35,6 @@
 				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Facades.html">Facades</a>
 						</li>
 				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Handlers.html">Handlers</a>
-						</li>
-				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Interfaces.html">Interfaces</a>
 						</li>
 				<li><a href="namespace-GrahamCampbell.BootstrapCMS.Models.html">Models<span></span></a>
 						<ul>
@@ -182,7 +180,7 @@
 </span><span id="42" class="l"><a class="l" href="#42">42: </a>            <span class="php-quote">'subject'</span> =&gt; Config::get(<span class="php-quote">'cms.name'</span>).<span class="php-quote">' - Welcome'</span>,
 </span><span id="43" class="l"><a class="l" href="#43">43: </a>        );
 </span><span id="44" class="l"><a class="l" href="#44">44: </a>
-</span><span id="45" class="l"><a class="l" href="#45">45: </a>        Queue::push(<span class="php-quote">'GrahamCampbell\BootstrapCMS\Handlers\MailHandler'</span>, <span class="php-var">$data</span>);
+</span><span id="45" class="l"><a class="l" href="#45">45: </a>        Queue::push(<span class="php-quote">'GrahamCampbell\BootstrapCMS\Handlers\MailHandler'</span>, <span class="php-var">$data</span>, Config::get(<span class="php-quote">'mail.queue'</span>));
 </span><span id="46" class="l"><a class="l" href="#46">46: </a>        <span class="php-keyword1">return</span> <span class="php-quote">'done'</span>;
 </span><span id="47" class="l"><a class="l" href="#47">47: </a>    }
 </span><span id="48" class="l"><a class="l" href="#48">48: </a>
