@@ -6,16 +6,46 @@
 
 	<title>Class GrahamCampbell\BootstrapCMS\Models\BaseModel</title>
 
-	<script type="text/javascript" src="resources/combined.js?2320924919"></script>
-	<script type="text/javascript" src="elementlist.js?4043428144"></script>
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+	<script type="text/javascript" src="resources/combined.js?856228570"></script>
+	<script type="text/javascript" src="elementlist.js?1176037185"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
 </head>
 
 <body>
-<div id="left">
+	<div id="navigation" class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="index.html" class="brand">Overview</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li>
+							<a href="namespace-GrahamCampbell.BootstrapCMS.Models.html" title="Summary of GrahamCampbell\BootstrapCMS\Models"><span>Namespace</span></a>
+						</li>
+						<li class="active">
+<span>Class</span>						</li>
+
+						<li class="divider-vertical"></li>
+
+						<li>
+							<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+						</li>
+
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="left">
 	<div id="menu">
-		<a href="index.html" title="Overview"><span>Overview</span></a>
+		<form id="search" class="form-search">
+			<input type="hidden" name="cx" value="" />
+			<input type="hidden" name="ie" value="UTF-8" />
+			<input type="text" name="q" class="search-query" placeholder="Search" />
+		</form>
 
 
 		<div id="groups">
@@ -75,8 +105,6 @@
 			</ul>
 		</div>
 
-		<hr />
-
 
 		<div id="elements">
 			<h3>Classes</h3>
@@ -102,40 +130,13 @@
 <div id="splitter"></div>
 
 <div id="right">
-<div id="rightInner">
-	<form id="search">
-		<input type="hidden" name="cx" value="" />
-		<input type="hidden" name="ie" value="UTF-8" />
-		<input type="text" name="q" class="text" />
-		<input type="submit" value="Search" />
-	</form>
-
-	<div id="navigation">
-		<ul>
-			<li>
-				<a href="index.html" title="Overview"><span>Overview</span></a>
-			</li>
-			<li>
-				<a href="namespace-GrahamCampbell.BootstrapCMS.Models.html" title="Summary of GrahamCampbell\BootstrapCMS\Models"><span>Namespace</span></a>
-			</li>
-			<li class="active">
-<span>Class</span>			</li>
-		</ul>
-		<ul>
-			<li>
-				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
-			</li>
-		</ul>
-		<ul>
-		</ul>
-	</div>
-
+	<div id="rightInner">
 <div id="content" class="class">
 	<h1>Class BaseModel</h1>
 
 
 
-	<dl class="tree">
+	<dl class="tree well">
 		<dd style="padding-left:0px">
 Eloquent
 			
@@ -155,11 +156,13 @@ Eloquent
 
 
 	<div>
-		<h4>Direct known subclasses</h4>
-			<a href="class-GrahamCampbell.BootstrapCMS.Models.Comment.html">GrahamCampbell\BootstrapCMS\Models\Comment</a>, 
-			<a href="class-GrahamCampbell.BootstrapCMS.Models.Event.html">GrahamCampbell\BootstrapCMS\Models\Event</a>, 
-			<a href="class-GrahamCampbell.BootstrapCMS.Models.Page.html">GrahamCampbell\BootstrapCMS\Models\Page</a>, 
-			<a href="class-GrahamCampbell.BootstrapCMS.Models.Post.html">GrahamCampbell\BootstrapCMS\Models\Post</a>
+		<h3>Direct known subclasses</h3>
+		<p class="elementList">
+			<code><a href="class-GrahamCampbell.BootstrapCMS.Models.Comment.html">GrahamCampbell\BootstrapCMS\Models\Comment</a></code>, 
+			<code><a href="class-GrahamCampbell.BootstrapCMS.Models.Event.html">GrahamCampbell\BootstrapCMS\Models\Event</a></code>, 
+			<code><a href="class-GrahamCampbell.BootstrapCMS.Models.Page.html">GrahamCampbell\BootstrapCMS\Models\Page</a></code>, 
+			<code><a href="class-GrahamCampbell.BootstrapCMS.Models.Post.html">GrahamCampbell\BootstrapCMS\Models\Post</a></code>
+		</p>
 	</div>
 
 
@@ -167,7 +170,7 @@ Eloquent
 
 
 
-	<div class="info">
+	<div class="alert alert-info">
 		<b>Abstract</b><br />
 		
 		<b>Namespace:</b> <a href="namespace-GrahamCampbell.html">GrahamCampbell</a>\<a href="namespace-GrahamCampbell.BootstrapCMS.html">BootstrapCMS</a>\<a href="namespace-GrahamCampbell.BootstrapCMS.Models.html">Models</a><br />
@@ -178,28 +181,23 @@ Eloquent
 
 
 
+		<h2>Methods summary</h2>
 
-	<table class="summary inherited">
-	<caption>Methods inherited from <a href="class-GrahamCampbell.BootstrapCMS.Models.Interfaces.IBaseModel.html#methods">GrahamCampbell\BootstrapCMS\Models\Interfaces\IBaseModel</a></caption>
-	<tr>
-		<td><code>
-			<a href="class-GrahamCampbell.BootstrapCMS.Models.Interfaces.IBaseModel.html#_getCreatedAt">getCreatedAt()</a>, 
-			<a href="class-GrahamCampbell.BootstrapCMS.Models.Interfaces.IBaseModel.html#_getId">getId()</a>, 
-			<a href="class-GrahamCampbell.BootstrapCMS.Models.Interfaces.IBaseModel.html#_getUpdatedAt">getUpdatedAt()</a>
-		</code></td>
-	</tr>
-	</table>
+		<h3>Methods inherited from <a href="class-GrahamCampbell.BootstrapCMS.Models.Interfaces.IBaseModel.html#methods">GrahamCampbell\BootstrapCMS\Models\Interfaces\IBaseModel</a></h3>
+		<p class="elementList">
+			<code><a href="class-GrahamCampbell.BootstrapCMS.Models.Interfaces.IBaseModel.html#_getCreatedAt">getCreatedAt()</a></code>, 
+			<code><a href="class-GrahamCampbell.BootstrapCMS.Models.Interfaces.IBaseModel.html#_getId">getId()</a></code>, 
+			<code><a href="class-GrahamCampbell.BootstrapCMS.Models.Interfaces.IBaseModel.html#_getUpdatedAt">getUpdatedAt()</a></code>
+		</p>
 
-	<table class="summary used">
-	<caption>Methods used from <a href="class-GrahamCampbell.BootstrapCMS.Models.Common.TraitBaseModel.html#methods">GrahamCampbell\BootstrapCMS\Models\Common\TraitBaseModel</a></caption>
-	<tr>
-		<td><code>
-			<a href="class-GrahamCampbell.BootstrapCMS.Models.Common.TraitBaseModel.html#_getCreatedAt">()</a>, 
-			<a href="class-GrahamCampbell.BootstrapCMS.Models.Common.TraitBaseModel.html#_getId">()</a>, 
-			<a href="class-GrahamCampbell.BootstrapCMS.Models.Common.TraitBaseModel.html#_getUpdatedAt">()</a>
-		</code></td>
-	</tr>
-	</table>
+		<h3>Methods used from <a href="class-GrahamCampbell.BootstrapCMS.Models.Common.TraitBaseModel.html#methods">GrahamCampbell\BootstrapCMS\Models\Common\TraitBaseModel</a></h3>
+		<p class="elementList">
+			<code><a href="class-GrahamCampbell.BootstrapCMS.Models.Common.TraitBaseModel.html#_getCreatedAt">getCreatedAt()</a></code>, 
+			<code><a href="class-GrahamCampbell.BootstrapCMS.Models.Common.TraitBaseModel.html#_getId">getId()</a></code>, 
+			<code><a href="class-GrahamCampbell.BootstrapCMS.Models.Common.TraitBaseModel.html#_getUpdatedAt">getUpdatedAt()</a></code>
+		</p>
+
+		<h3>Magic methods summary</h3>
 
 
 
@@ -208,34 +206,31 @@ Eloquent
 
 
 
+		<h2>Properties summary</h2>
+		<table class="summary table table-bordered table-striped" id="properties">
+		<tr data-order="guarded" id="$guarded">
+			<td class="attributes"><code>
+				protected  
+				array
+			</code></td>
 
+			<td class="name">
+					<a href="source-class-GrahamCampbell.BootstrapCMS.Models.BaseModel.html#9" title="Go to source code"><var>$guarded</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$guarded" class="anchor">#</a>
 
-	<table class="summary" id="properties">
-	<caption>Properties summary</caption>
-	<tr data-order="guarded" id="$guarded">
-		<td class="attributes"><code>
-			protected  
-			array
-		</code></td>
+				<div class="description short">
+					
+				</div>
 
-		<td class="name">
-				<a href="source-class-GrahamCampbell.BootstrapCMS.Models.BaseModel.html#9" title="Go to source code"><var>$guarded</var></a>
-		</td>
-		<td class="value"><code><span class="php-keyword1">array</span>(<span class="php-quote">'_token'</span>, <span class="php-quote">'_method'</span>, <span class="php-quote">'id'</span>)</code></td>
-		<td class="description"><div>
-			<a href="#$guarded" class="anchor">#</a>
+				<div class="description detailed hidden">
+					
 
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</div></td>
-	</tr>
-	</table>
+				</div>
+			</div></td>
+		</tr>
+		</table>
 
 
 
@@ -243,11 +238,11 @@ Eloquent
 
 
 </div>
+	</div>
 
 	<div id="footer">
 		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
 	</div>
-</div>
 </div>
 </body>
 </html>

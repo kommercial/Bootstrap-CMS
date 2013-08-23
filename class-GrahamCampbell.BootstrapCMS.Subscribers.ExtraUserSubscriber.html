@@ -4,7 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="generator" content="ApiGen 2.8.0" />
 
-	<title>Class GrahamCampbell\BootstrapCMS\Subscribers\GroupSubscriber</title>
+	<title>Class GrahamCampbell\BootstrapCMS\Subscribers\ExtraUserSubscriber</title>
 
 	<script type="text/javascript" src="resources/combined.js?856228570"></script>
 	<script type="text/javascript" src="elementlist.js?1176037185"></script>
@@ -113,8 +113,8 @@
 				<li><a href="class-GrahamCampbell.BootstrapCMS.Subscribers.CoreSubscriber.html">CoreSubscriber</a></li>
 				<li><a href="class-GrahamCampbell.BootstrapCMS.Subscribers.EloquentSubscriber.html">EloquentSubscriber</a></li>
 				<li><a href="class-GrahamCampbell.BootstrapCMS.Subscribers.EventSubscriber.html">EventSubscriber</a></li>
-				<li><a href="class-GrahamCampbell.BootstrapCMS.Subscribers.ExtraUserSubscriber.html">ExtraUserSubscriber</a></li>
-				<li class="active"><a href="class-GrahamCampbell.BootstrapCMS.Subscribers.GroupSubscriber.html">GroupSubscriber</a></li>
+				<li class="active"><a href="class-GrahamCampbell.BootstrapCMS.Subscribers.ExtraUserSubscriber.html">ExtraUserSubscriber</a></li>
+				<li><a href="class-GrahamCampbell.BootstrapCMS.Subscribers.GroupSubscriber.html">GroupSubscriber</a></li>
 				<li><a href="class-GrahamCampbell.BootstrapCMS.Subscribers.PageSubscriber.html">PageSubscriber</a></li>
 				<li><a href="class-GrahamCampbell.BootstrapCMS.Subscribers.PostSubscriber.html">PostSubscriber</a></li>
 				<li><a href="class-GrahamCampbell.BootstrapCMS.Subscribers.UserSubscriber.html">UserSubscriber</a></li>
@@ -133,7 +133,7 @@
 <div id="right">
 	<div id="rightInner">
 <div id="content" class="class">
-	<h1>Class GroupSubscriber</h1>
+	<h1>Class ExtraUserSubscriber</h1>
 
 
 
@@ -151,7 +151,7 @@
 		<b>Namespace:</b> <a href="namespace-GrahamCampbell.html">GrahamCampbell</a>\<a href="namespace-GrahamCampbell.BootstrapCMS.html">BootstrapCMS</a>\<a href="namespace-GrahamCampbell.BootstrapCMS.Subscribers.html">Subscribers</a><br />
 		
 
-		<b>Located at</b> <a href="source-class-GrahamCampbell.BootstrapCMS.Subscribers.GroupSubscriber.html#3-28" title="Go to source code">app/src/GrahamCampbell/BootstrapCMS/Subscribers/GroupSubscriber.php</a><br />
+		<b>Located at</b> <a href="source-class-GrahamCampbell.BootstrapCMS.Subscribers.ExtraUserSubscriber.html#5-71" title="Go to source code">app/src/GrahamCampbell/BootstrapCMS/Subscribers/ExtraUserSubscriber.php</a><br />
 	</div>
 
 
@@ -169,7 +169,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_subscribe">#</a>
-			<code><a href="source-class-GrahamCampbell.BootstrapCMS.Subscribers.GroupSubscriber.html#5-15" title="Go to source code">subscribe</a>( <span>Illuminate\Events\Dispatcher <var>$events</var></span> )</code>
+			<code><a href="source-class-GrahamCampbell.BootstrapCMS.Subscribers.ExtraUserSubscriber.html#7-21" title="Go to source code">subscribe</a>( <span>Illuminate\Events\Dispatcher <var>$events</var></span> )</code>
 
 			<div class="description short">
 				
@@ -200,7 +200,7 @@
 			</div>
 			</div></td>
 		</tr>
-		<tr data-order="onGroupCreated" id="_onGroupCreated">
+		<tr data-order="onUserLoginSuccessful" id="_onUserLoginSuccessful">
 
 			<td class="attributes"><code>
 				 public 
@@ -210,8 +210,8 @@
 			</td>
 
 			<td class="name"><div>
-			<a class="anchor" href="#_onGroupCreated">#</a>
-			<code><a href="source-class-GrahamCampbell.BootstrapCMS.Subscribers.GroupSubscriber.html#17-19" title="Go to source code">onGroupCreated</a>( <span>mixed <var>$event</var></span> )</code>
+			<a class="anchor" href="#_onUserLoginSuccessful">#</a>
+			<code><a href="source-class-GrahamCampbell.BootstrapCMS.Subscribers.ExtraUserSubscriber.html#23-28" title="Go to source code">onUserLoginSuccessful</a>( <span>mixed <var>$event</var></span> )</code>
 
 			<div class="description short">
 				
@@ -229,7 +229,7 @@
 			</div>
 			</div></td>
 		</tr>
-		<tr data-order="onGroupUpdated" id="_onGroupUpdated">
+		<tr data-order="onUserLoginFailed" id="_onUserLoginFailed">
 
 			<td class="attributes"><code>
 				 public 
@@ -239,8 +239,8 @@
 			</td>
 
 			<td class="name"><div>
-			<a class="anchor" href="#_onGroupUpdated">#</a>
-			<code><a href="source-class-GrahamCampbell.BootstrapCMS.Subscribers.GroupSubscriber.html#21-23" title="Go to source code">onGroupUpdated</a>( <span>mixed <var>$event</var></span> )</code>
+			<a class="anchor" href="#_onUserLoginFailed">#</a>
+			<code><a href="source-class-GrahamCampbell.BootstrapCMS.Subscribers.ExtraUserSubscriber.html#30-35" title="Go to source code">onUserLoginFailed</a>( <span>mixed <var>$event</var></span> )</code>
 
 			<div class="description short">
 				
@@ -258,7 +258,7 @@
 			</div>
 			</div></td>
 		</tr>
-		<tr data-order="onGroupDeleted" id="_onGroupDeleted">
+		<tr data-order="onUserLogout" id="_onUserLogout">
 
 			<td class="attributes"><code>
 				 public 
@@ -268,8 +268,124 @@
 			</td>
 
 			<td class="name"><div>
-			<a class="anchor" href="#_onGroupDeleted">#</a>
-			<code><a href="source-class-GrahamCampbell.BootstrapCMS.Subscribers.GroupSubscriber.html#25-27" title="Go to source code">onGroupDeleted</a>( <span>mixed <var>$event</var></span> )</code>
+			<a class="anchor" href="#_onUserLogout">#</a>
+			<code><a href="source-class-GrahamCampbell.BootstrapCMS.Subscribers.ExtraUserSubscriber.html#37-42" title="Go to source code">onUserLogout</a>( <span>mixed <var>$event</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="onUserRegistrationSuccessful" id="_onUserRegistrationSuccessful">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_onUserRegistrationSuccessful">#</a>
+			<code><a href="source-class-GrahamCampbell.BootstrapCMS.Subscribers.ExtraUserSubscriber.html#44-49" title="Go to source code">onUserRegistrationSuccessful</a>( <span>mixed <var>$event</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="onUserRegistrationFailed" id="_onUserRegistrationFailed">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_onUserRegistrationFailed">#</a>
+			<code><a href="source-class-GrahamCampbell.BootstrapCMS.Subscribers.ExtraUserSubscriber.html#51-56" title="Go to source code">onUserRegistrationFailed</a>( <span>mixed <var>$event</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="onUserActivationSuccessful" id="_onUserActivationSuccessful">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_onUserActivationSuccessful">#</a>
+			<code><a href="source-class-GrahamCampbell.BootstrapCMS.Subscribers.ExtraUserSubscriber.html#58-63" title="Go to source code">onUserActivationSuccessful</a>( <span>mixed <var>$event</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="onUserActivationFailed" id="_onUserActivationFailed">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_onUserActivationFailed">#</a>
+			<code><a href="source-class-GrahamCampbell.BootstrapCMS.Subscribers.ExtraUserSubscriber.html#65-70" title="Go to source code">onUserActivationFailed</a>( <span>mixed <var>$event</var></span> )</code>
 
 			<div class="description short">
 				

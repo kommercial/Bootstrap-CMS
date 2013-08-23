@@ -6,16 +6,46 @@
 
 	<title>Class GrahamCampbell\BootstrapCMS\Providers\EventProvider</title>
 
-	<script type="text/javascript" src="resources/combined.js?2320924919"></script>
-	<script type="text/javascript" src="elementlist.js?4043428144"></script>
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+	<script type="text/javascript" src="resources/combined.js?856228570"></script>
+	<script type="text/javascript" src="elementlist.js?1176037185"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
 </head>
 
 <body>
-<div id="left">
+	<div id="navigation" class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="index.html" class="brand">Overview</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li>
+							<a href="namespace-GrahamCampbell.BootstrapCMS.Providers.html" title="Summary of GrahamCampbell\BootstrapCMS\Providers"><span>Namespace</span></a>
+						</li>
+						<li class="active">
+<span>Class</span>						</li>
+
+						<li class="divider-vertical"></li>
+
+						<li>
+							<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+						</li>
+
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="left">
 	<div id="menu">
-		<a href="index.html" title="Overview"><span>Overview</span></a>
+		<form id="search" class="form-search">
+			<input type="hidden" name="cx" value="" />
+			<input type="hidden" name="ie" value="UTF-8" />
+			<input type="text" name="q" class="search-query" placeholder="Search" />
+		</form>
 
 
 		<div id="groups">
@@ -75,8 +105,6 @@
 			</ul>
 		</div>
 
-		<hr />
-
 
 		<div id="elements">
 			<h3>Classes</h3>
@@ -101,40 +129,13 @@
 <div id="splitter"></div>
 
 <div id="right">
-<div id="rightInner">
-	<form id="search">
-		<input type="hidden" name="cx" value="" />
-		<input type="hidden" name="ie" value="UTF-8" />
-		<input type="text" name="q" class="text" />
-		<input type="submit" value="Search" />
-	</form>
-
-	<div id="navigation">
-		<ul>
-			<li>
-				<a href="index.html" title="Overview"><span>Overview</span></a>
-			</li>
-			<li>
-				<a href="namespace-GrahamCampbell.BootstrapCMS.Providers.html" title="Summary of GrahamCampbell\BootstrapCMS\Providers"><span>Namespace</span></a>
-			</li>
-			<li class="active">
-<span>Class</span>			</li>
-		</ul>
-		<ul>
-			<li>
-				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
-			</li>
-		</ul>
-		<ul>
-		</ul>
-	</div>
-
+	<div id="rightInner">
 <div id="content" class="class">
 	<h1>Class EventProvider</h1>
 
 
 
-	<dl class="tree">
+	<dl class="tree well">
 		<dd style="padding-left:0px">
 			<a href="class-GrahamCampbell.BootstrapCMS.Providers.BaseProvider.html"><span>GrahamCampbell\BootstrapCMS\Providers\BaseProvider</span></a>
 			
@@ -151,6 +152,8 @@
 			 implements 
 				<a href="class-GrahamCampbell.BootstrapCMS.Providers.Interfaces.IPaginateProvider.html"><span>GrahamCampbell\BootstrapCMS\Providers\Interfaces\IPaginateProvider</span></a>
 			
+			 uses 
+				<a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitPaginateProvider.html"><span>GrahamCampbell\BootstrapCMS\Providers\Common\TraitPaginateProvider</span></a>
 			
 		</dd>
 	</dl>
@@ -162,47 +165,43 @@
 
 
 
-	<div class="info">
+	<div class="alert alert-info">
 		
 		
 		<b>Namespace:</b> <a href="namespace-GrahamCampbell.html">GrahamCampbell</a>\<a href="namespace-GrahamCampbell.BootstrapCMS.html">BootstrapCMS</a>\<a href="namespace-GrahamCampbell.BootstrapCMS.Providers.html">Providers</a><br />
 		
 
-		<b>Located at</b> <a href="source-class-GrahamCampbell.BootstrapCMS.Providers.EventProvider.html#3-7" title="Go to source code">app/src/GrahamCampbell/BootstrapCMS/Providers/EventProvider.php</a><br />
+		<b>Located at</b> <a href="source-class-GrahamCampbell.BootstrapCMS.Providers.EventProvider.html#3-9" title="Go to source code">app/src/GrahamCampbell/BootstrapCMS/Providers/EventProvider.php</a><br />
 	</div>
 
 
 
+		<h2>Methods summary</h2>
 
-	<table class="summary inherited">
-	<caption>Methods inherited from <a href="class-GrahamCampbell.BootstrapCMS.Providers.Interfaces.IBaseProvider.html#methods">GrahamCampbell\BootstrapCMS\Providers\Interfaces\IBaseProvider</a></caption>
-	<tr>
-		<td><code>
-			<a href="class-GrahamCampbell.BootstrapCMS.Providers.Interfaces.IBaseProvider.html#_create">create()</a>, 
-			<a href="class-GrahamCampbell.BootstrapCMS.Providers.Interfaces.IBaseProvider.html#_find">find()</a>, 
-			<a href="class-GrahamCampbell.BootstrapCMS.Providers.Interfaces.IBaseProvider.html#_index">index()</a>
-		</code></td>
-	</tr>
-	</table>
-	<table class="summary inherited">
-	<caption>Methods inherited from <a href="class-GrahamCampbell.BootstrapCMS.Providers.Interfaces.IPaginateProvider.html#methods">GrahamCampbell\BootstrapCMS\Providers\Interfaces\IPaginateProvider</a></caption>
-	<tr>
-		<td><code>
-			<a href="class-GrahamCampbell.BootstrapCMS.Providers.Interfaces.IPaginateProvider.html#_paginate">paginate()</a>
-		</code></td>
-	</tr>
-	</table>
+		<h3>Methods inherited from <a href="class-GrahamCampbell.BootstrapCMS.Providers.Interfaces.IBaseProvider.html#methods">GrahamCampbell\BootstrapCMS\Providers\Interfaces\IBaseProvider</a></h3>
+		<p class="elementList">
+			<code><a href="class-GrahamCampbell.BootstrapCMS.Providers.Interfaces.IBaseProvider.html#_create">create()</a></code>, 
+			<code><a href="class-GrahamCampbell.BootstrapCMS.Providers.Interfaces.IBaseProvider.html#_find">find()</a></code>, 
+			<code><a href="class-GrahamCampbell.BootstrapCMS.Providers.Interfaces.IBaseProvider.html#_index">index()</a></code>
+		</p>
+		<h3>Methods inherited from <a href="class-GrahamCampbell.BootstrapCMS.Providers.Interfaces.IPaginateProvider.html#methods">GrahamCampbell\BootstrapCMS\Providers\Interfaces\IPaginateProvider</a></h3>
+		<p class="elementList">
+			<code><a href="class-GrahamCampbell.BootstrapCMS.Providers.Interfaces.IPaginateProvider.html#_paginate">paginate()</a></code>
+		</p>
 
-	<table class="summary used">
-	<caption>Methods used from <a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#methods">GrahamCampbell\BootstrapCMS\Providers\Common\TraitBaseProvider</a></caption>
-	<tr>
-		<td><code>
-			<a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#_create">()</a>, 
-			<a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#_find">()</a>, 
-			<a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#_index">()</a>
-		</code></td>
-	</tr>
-	</table>
+		<h3>Methods used from <a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitPaginateProvider.html#methods">GrahamCampbell\BootstrapCMS\Providers\Common\TraitPaginateProvider</a></h3>
+		<p class="elementList">
+			<code><a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitPaginateProvider.html#_links">links()</a></code>, 
+			<code><a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitPaginateProvider.html#_paginate">paginate()</a></code>
+		</p>
+		<h3>Methods used from <a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#methods">GrahamCampbell\BootstrapCMS\Providers\Common\TraitBaseProvider</a></h3>
+		<p class="elementList">
+			<code><a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#_create">create()</a></code>, 
+			<code><a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#_find">find()</a></code>, 
+			<code><a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitBaseProvider.html#_index">index()</a></code>
+		</p>
+
+		<h3>Magic methods summary</h3>
 
 
 
@@ -211,46 +210,47 @@
 
 
 
+		<h2>Properties summary</h2>
+		<table class="summary table table-bordered table-striped" id="properties">
+		<tr data-order="model" id="$model">
+			<td class="attributes"><code>
+				protected  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-GrahamCampbell.BootstrapCMS.Providers.EventProvider.html#7" title="Go to source code"><var>$model</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$model" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		</table>
 
 
-	<table class="summary" id="properties">
-	<caption>Properties summary</caption>
-	<tr data-order="model" id="$model">
-		<td class="attributes"><code>
-			protected  
-			string
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-GrahamCampbell.BootstrapCMS.Providers.EventProvider.html#5" title="Go to source code"><var>$model</var></a>
-		</td>
-		<td class="value"><code><span class="php-quote">'GrahamCampbell\BootstrapCMS\Models\Event'</span></code></td>
-		<td class="description"><div>
-			<a href="#$model" class="anchor">#</a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</div></td>
-	</tr>
-	</table>
-
-
+		<h3>Properties used from <a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitPaginateProvider.html#properties">GrahamCampbell\BootstrapCMS\Providers\Common\TraitPaginateProvider</a></h3>
+		<p class="elementList">
+			<code><a href="class-GrahamCampbell.BootstrapCMS.Providers.Common.TraitPaginateProvider.html#$paginatelinks"><var>$paginatelinks</var></a></code>
+		</p>
 
 
 
 
 </div>
+	</div>
 
 	<div id="footer">
 		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
 	</div>
-</div>
 </div>
 </body>
 </html>
